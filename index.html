@@ -1,9 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Personal Portfolio Webpage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
 <body>
-  <h1>Site under construction...</h1>
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="welcome-section" class="welcome-section">
+      <div class="welcome-header">
+        <h1>Hello there!</h1>
+        <i><p>My name is Nick, and I am a web developer</p></i>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="projects-header">
+        <h2>Here are some of my projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project">
+          <a href="https://codepen.io/npkorintus/pen/Vqdomb" target="_blank" class="project-tile">
+            <img class="project-image" src="/assets/tribute-page.png" alt="project">
+            <p class="project-title">Tribute Page</p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://codepen.io/npkorintus/full/KbeOgE" target="_blank" class="project-tile">
+            <img class="project-image" src="/assets/survey-form.png" alt="project">
+            <p class="project-title">Survey Form</p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://codepen.io/npkorintus/pen/vYBmdpW" target="_blank" class="project-tile">
+            <img class="project-image" src="/assets/product-landing-page.png" alt="project">
+            <p class="project-title">Product Langing Page</p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://codepen.io/npkorintus/full/RwNVeLR" target="_blank" class="project-tile">
+            <img class="project-image" src="/assets/technical-documentation-page.png" alt="project">
+            <p class="project-title">Technical Documentation Page</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-header">
+        <h2>Let's connect!</h2>
+        <i><p>Here are some places you can find me:</p></i>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="https://github.com/npkorintus" target="_blank" class="btn contact-details">
+          <p class="contact-label">GitHub</p>
+        </a>
+        <a id="profile-link" href="https://www.linkedin.com/in/nicholas-korintus/" target="_blank" class="btn contact-details">
+          <p class="contact-label">LinkedIn</p>
+        </a>
+        <a id="profile-link" href="mailto:nicholas.korintus@gmail.com" class="btn contact-details">
+          <p class="contact-label">Email me</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="copyright">&#x24B8; Nick Korintus 2019</p>
+  </footer>
 </body>
+
 </html>

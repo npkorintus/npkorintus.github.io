@@ -1,7 +1,147 @@
-body {
-  background-color: darkgray;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(95, 158, 160);
+  justify-content: flex-end;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-weight: 600;
+  padding: 16px;
+  display: block;
+}
+
+main {
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
 
 h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+}
+
+.projects-section {
   text-align: center;
+  padding:  48px 28px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(30, 30, 30);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  background-color: rgb(95, 158, 160);
+  padding: 8px 32px;
+}
+
+.project-tile, .contact-label, a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+}
+
+.project-tile:hover, .contact-label:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.projects-header, .contact-header {
+  margin-bottom: 24px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 2px;
+}
+
+footer {
+  border-top: 4px solid rgb(95, 158, 160);
+  background: rgb(30, 30, 30);
+  color: rgb(230, 230, 230);
+}
+
+.copyright {
+  padding: 16px;
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 125%;
   }
+}
