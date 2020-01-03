@@ -1,0 +1,60 @@
+html {
+  background-image: url(/assets/wooden-planks.jpg);
+}
+
+@media(max-width: 100px) {
+  html {
+    text-align: center;
+  }
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+  width: 600px;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#header-img {
+  margin-top: 32px;
+}
+
+#nav-bar {
+  position: fixed;
+  background-color: white;
+  padding: 8px 0;
+  width: 600px;
+}
+
+form {
+  text-align: center;
+}
+
+a {
+  margin: 8px;
+}
+
+section {
+  margin: 0 16px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#email {
+  margin-top: 32px;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  padding: 16px 0;
+}
