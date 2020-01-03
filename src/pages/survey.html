@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="/src/styles/survey.css">
+</head>
+
+<body>
+  <div class="main">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <h4 id="description">NYC residents - Tell us about yourselves!</h4>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <p id="name-label">Name<small class="helper-text">(required)</small></p>
+        <div class="input">
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" size="35" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <p id="email-label">Email<small class="helper-text">(required)</small></p>
+        <div class="input">
+          <input type="email" id="email" class="form-control" size="35" placeholder="Enter your email address" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <p id="number-label">Age</p>
+        <div class="input">
+          <input type="number" id="number" class="form-control" placeholder="Age" min="1" max="99" />
+        </div>
+      </div>
+      <div class="form-group">
+          <p>Which borough do you live in?<small class="helper-text">(required)</small></p>
+        <div class="input">
+          <select class="form-control" id="dropdown" required >
+            <option disabled selected value>Select Borough</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Brooklyn">Brooklyn</option>
+            <option value="Queens">Queens</option>
+            <option value="The Bronx">The Bronx</option>
+            <option value="Staten Island">Staten Island</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>What is your gender?<small class="helper-text">(required)</small></p>
+        <div class="radio-button-group">
+          <div><input type="radio" name="Gender" value="Male" class="input-radio"/><label>Male</label></div>
+          <div><input type="radio" name="Gender" value="Female" class="input-radio"/><label>Female</label></div>
+          <div><input type="radio" name="Gender" value="Prefer not to say" class="input-radio"/><label>Prefer not to say</label></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>How do you get to work/school?<small class="helper-text">(Check all that apply)</small></p>
+        <div class="checkbox-group">
+          <div><input type="checkbox" name="Walk" value="Walk" class="input-checkbox"/><label>Walk</label></div>
+          <div><input type="checkbox" name="Bike" value="Bike" class="input-checkbox"/><label>Bike</label></div>
+          <div><input type="checkbox" name="Subway" value="Subway" class="input-checkbox"/><label>Subway</label></div>
+          <div><input type="checkbox" name="Subway" value="Subway" class="input-checkbox"/><label>Bus</label></div>
+          <div><input type="checkbox" name="Taxi" value="Taxi" class="input-checkbox"/><label>Taxi</label></div>
+          <div><input type="checkbox" name="Other" value="Other" class="input-checkbox"/><label>Other</label></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Comments/concerns</p>
+        <div class="input">
+          <textarea rows="10" cols="50" class="text-area">Enter text here</textarea>
+        </div>
+      </div>
+      <div class="submit-button">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
