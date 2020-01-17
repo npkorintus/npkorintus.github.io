@@ -9,34 +9,46 @@
 </head>
 
 <header id="header">
-  <img id="header-img" src="https://4cy9nx1nwb4f3giw7x37lcaw-wpengine.netdna-ssl.com/wp-content/uploads/sites/10/2018/12/c7c44caf282a19cdac9b7e138483f37b_bookmarkImage_256x256_medium_original_1.jpg" alt="coffee">
   <nav id="nav-bar">
-    <a class="nav-link" href="#about">About</a> |
-    <a class="nav-link" href="#video">How it's made</a> |
+    <a class="nav-link" href="#home">Home</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#video">How it's made</a>
     <a class="nav-link" href="#regions">Coffee regions</a>
   </nav>
 </header>
 
 <body>
-  <section id="email-form">
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input name="email" id="email" type="email" placeholder="Enter your email for free coffee" required/>
-      <input name="submit" id="submit" type="submit"/>
-    </form>
-  </section>
+  <article class="content-wrapper" id="home">
+    <section>
+    <img id="header-img" src="https://4cy9nx1nwb4f3giw7x37lcaw-wpengine.netdna-ssl.com/wp-content/uploads/sites/10/2018/12/c7c44caf282a19cdac9b7e138483f37b_bookmarkImage_256x256_medium_original_1.jpg" alt="coffee">
+    </section>
 
-  <section id="about">
-    <h2>Coffee is the best!</h2>
-    <p>Coffee srsly rules, d00d</p>
+    <section >
+      <h1>Coffee is the best!</h1>
+      <!-- <p>Coffee srsly rules, d00d</p> -->
+
+    </section>
+  </article>
+
+  <article class="content-wrapper">
+    <section id="about">
+      <h2>All about coffee</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet suspendisse interdum consectetur libero. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Aliquam vestibulum morbi blandit cursus risus at ultrices. Neque vitae tempus quam pellentesque nec nam aliquam. Sit amet nisl purus in mollis nunc sed id semper. Felis bibendum ut tristique et egestas. Euismod nisi porta lorem mollis. Mattis enim ut tellus elementum sagittis vitae et. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Molestie nunc non blandit massa. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Laoreet non curabitur gravida arcu ac tortor. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim.</p>
     <p>Fringilla urna porttitor rhoncus dolor purus non enim. Mauris rhoncus aenean vel elit scelerisque. Neque sodales ut etiam sit amet. Pellentesque nec nam aliquam sem et. Sed nisi lacus sed viverra tellus. Quam pellentesque nec nam aliquam sem et tortor consequat. Commodo quis imperdiet massa tincidunt nunc. Eget aliquet nibh praesent tristique magna. Dictum sit amet justo donec enim diam. Nisi porta lorem mollis aliquam ut porttitor leo a. Neque ornare aenean euismod elementum nisi quis eleifend quam. Ullamcorper a lacus vestibulum sed. Elementum pulvinar etiam non quam. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Auctor elit sed vulputate mi sit amet mauris.</p>
     <p>Lacinia quis vel eros donec ac odio tempor orci. In nulla posuere sollicitudin aliquam. Non pulvinar neque laoreet suspendisse interdum consectetur libero. At consectetur lorem donec massa. Lectus mauris ultrices eros in cursus turpis massa. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Et tortor at risus viverra adipiscing. Commodo odio aenean sed adipiscing diam. Sit amet luctus venenatis lectus magna. Molestie ac feugiat sed lectus vestibulum mattis. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Tellus orci ac auctor augue mauris augue neque. Sagittis vitae et leo duis ut diam quam nulla.</p>
   </section>
+  </article>
 
-  <section id="video">
-    <h2>Watch how coffee is made</h2>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_nv4Gm8XWf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
+  <article class="content-wrapper">
+    <section id="video">
+      <h2>Watch how coffee is made</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_nv4Gm8XWf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </article>
+
+  <article class="content-wrapper">
+
+      <img id="world-map" alt="world map" src="/assets/world-map.jpg" />
 
   <section id="regions">
     <h2>Coffee growing regions of the world</h2>
@@ -61,6 +73,17 @@
         </ul>
     </ul>
   </section>
+</article>
+
+<article class="content-wrapper">
+  <section id="email-form">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email for free coffee" required/>
+      <input name="submit" id="submit" type="submit"/>
+    </form>
+  </section>
+</article>
+
   <footer></footer>
 </body>
 
