@@ -1,33 +1,33 @@
 html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
   text-align: center;
-  background-color: whitesmoke;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 #main {
-  max-width: 800px;
   margin: 0 auto;
-  background-color: white;
   border-radius: 8px;
 }
 
+
 header {
-  background-color: navy;
-  color: white;
-  padding: 16px 0;
+  padding: 48px 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-header, footer {
-  padding: 16px 0;
+#subheader {
+  font-size: 24px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: red;
-  overflow: hidden;
-}
 
 nav ul {
   list-style-type: none;
@@ -48,6 +48,9 @@ nav a {
 section {
   padding: 16px;
   margin: 16px;
+  align-items: center;
+  /* width: 100%; */
+  height: 100vh;
 }
 
 h1 {
@@ -57,40 +60,44 @@ h1 {
   margin: 0;
 }
 
-.subheader {
-  font-size: 24px;
-  font-style: italic;
-  text-transform: uppercase;
-  margin: 0;
+
+
+#img-div {
+  min-width: fit-content;
 }
 
 #tribute-info {
   font-size: 20px;
+  padding: 16px;
+}
+
+#tribute-info p {
+  font-size: 32px;
 }
 
 #image {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 0 auto 8px auto;
 }
 
 #img-caption {
   margin-top: 4px;
 }
 
-.list-title {
-  text-decoration: underline;
+#intro h3 {
+  padding: 20px 0;
 }
 
-#list-wrapper {
-  padding-top: 16px;
+section h2 {
+  padding: 16px 0;
 }
 
 ul {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto 0 auto;
-  font-size: 20px;
+  /* font-size: 20px; */
   line-height: 1;
 }
 
@@ -99,26 +106,23 @@ li {
   margin-bottom: 8px;
 }
 
-#link {
+#quotes h2, p {
+  padding: 16px 0;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* #tribute-link {
   font-size: 18px;
-}
+} */
 
-#tribute-link {
+/* p {
   font-size: 18px;
-}
+} */
 
-p {
-  font-size: 18px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 800px;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
