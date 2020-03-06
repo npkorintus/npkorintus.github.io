@@ -4,7 +4,9 @@
 }
 
 html {
+  font-family: 'Roboto Slab', serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -22,9 +24,9 @@ nav {
   display: flex;
 }
 
-.nav-list a {
+#nav-list a {
   text-decoration: none;
-  color: rgb(230, 230, 230);
+  color: rgb(255, 255, 255);
   font-weight: 600;
   padding: 16px;
   display: block;
@@ -48,7 +50,7 @@ h2 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #welcome-section {
@@ -63,18 +65,18 @@ p {
 }
 
 #welcome-header {
-  /* text-align: center; */
-  max-width: 500px;
+  max-width: 600px;
+  line-height: 1.4;
 }
 
-.projects-section {
+#projects-section {
   text-align: center;
   padding: 160px 32px;
   background-color: rgb(230, 230, 230);
   color: rgb(30, 30, 30);
 }
 
-.contact-section {
+#contact-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +88,7 @@ p {
   color: rgb(230, 230, 230);
 }
 
-.projects-grid {
+#projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 64px;
@@ -101,20 +103,26 @@ img{
   width: 100%;
 }
 
+.project {
+  background-color: rgb(95, 158, 160);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: calc(100% - 40px);
   width: 100%;
   object-fit: cover;
 }
 
 .project-title {
-  background-color: rgb(95, 158, 160);
+  /* background-color: rgb(95, 158, 160); */
   padding: 8px 32px;
 }
 
 .project-tile, .contact-label, a {
   text-decoration: none;
-  color: rgb(230, 230, 230);
+  color: rgb(255, 255, 255);
 }
 
 .project-tile:hover, .contact-label:hover {
@@ -122,7 +130,7 @@ img{
   font-weight: 600;
 }
 
-.projects-header, .contact-header {
+#projects-header, #contact-header {
   margin-bottom: 24px;
 }
 
@@ -134,9 +142,20 @@ img{
   flex-wrap: wrap;
 }
 
+.profile-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px 16px;
+}
+
+.profile-link i {
+  font-size: 24px;
+}
+
 .btn {
   display: inline-block;
-  padding: 4px 16px;
+  padding: 4px 8px;
   border-radius: 2px;
 }
 
@@ -144,7 +163,7 @@ footer {
   border-top: 4px solid rgb(95, 158, 160);
   background: rgb(30, 30, 30);
   color: rgb(230, 230, 230);
-  
+
 }
 
 #copyright {
