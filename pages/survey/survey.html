@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Survey Form</title>
-    <link rel="stylesheet" type="text/css" href="/styles/survey.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="/styles/survey.css">
 </head>
-
 <body>
   <div class="main">
     <header class="header">
@@ -35,6 +32,14 @@
         </div>
       </div>
       <div class="form-group">
+        <p>What is your gender?<small class="helper-text">(required)</small></p>
+        <div class="radio-button-group">
+          <div class="radio-option"><input type="radio" name="Gender" value="Male" class="input-radio"/><label>Male</label></div>
+          <div class="radio-option"><input type="radio" name="Gender" value="Female" class="input-radio"/><label>Female</label></div>
+          <div class="radio-option"><input type="radio" name="Gender" value="Prefer not to say" class="input-radio"/><label>Prefer not to say</label></div class="radio-option">
+        </div>
+      </div>
+      <div class="form-group">
           <p>Which borough do you live in?<small class="helper-text">(required)</small></p>
         <div class="input">
           <select class="form-control" id="dropdown" required >
@@ -45,14 +50,6 @@
             <option value="The Bronx">The Bronx</option>
             <option value="Staten Island">Staten Island</option>
           </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <p>What is your gender?<small class="helper-text">(required)</small></p>
-        <div class="radio-button-group">
-          <div class="radio-option"><input type="radio" name="Gender" value="Male" class="input-radio"/><label>Male</label></div>
-          <div class="radio-option"><input type="radio" name="Gender" value="Female" class="input-radio"/><label>Female</label></div>
-          <div class="radio-option"><input type="radio" name="Gender" value="Prefer not to say" class="input-radio"/><label>Prefer not to say</label></div class="radio-option">
         </div>
       </div>
       <div class="form-group">
