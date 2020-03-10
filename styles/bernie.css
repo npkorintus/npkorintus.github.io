@@ -1,24 +1,43 @@
 html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
-
-body {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
-#main {
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
 
 header {
-  padding: 48px 0;
+  padding: 32px 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 72px 0;
+}
+
+ul {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 0 32px;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.header {
+  text-align: center;
+}
+
+#title {
+  font-size: 48px;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin: 0;
 }
 
 #subheader {
@@ -28,51 +47,9 @@ header {
   margin: 0;
 }
 
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav li {
-  margin: 0 4px;
-}
-
-nav a {
-  text-decoration: none;
-  color: rgb(230, 230, 230);
-  padding: 16px;
-  display: block;
-}
-
-section {
-  padding: 16px;
-  margin: 16px;
-  align-items: center;
-  /* width: 100%; */
-  height: 100vh;
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  font-variant: small-caps;
-  margin: 0;
-}
-
-
-
 #img-div {
   min-width: fit-content;
-}
-
-#tribute-info {
-  font-size: 20px;
-  padding: 16px;
-}
-
-#tribute-info p {
-  font-size: 32px;
+  text-align: center;
 }
 
 #image {
@@ -86,43 +63,34 @@ h1 {
   margin-top: 4px;
 }
 
-#intro h3 {
-  padding: 20px 0;
-}
-
-section h2 {
-  padding: 16px 0;
-}
-
-ul {
-  max-width: 700px;
-  margin: 0 auto 0 auto;
-  /* font-size: 20px; */
-  line-height: 1;
-}
-
-li {
+#about-wrapper {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: left;
-  margin-bottom: 8px;
+  line-height: 1.4;
+  padding: 0 32px;
+}
+
+#quotes-wrapper {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 0 32px;
 }
 
 #quotes h2, p {
   padding: 16px 0;
 }
 
-.section {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+#more-wrapper {
+  padding: 0 32px;
+  text-align: center;
 }
 
-
-/* #tribute-link {
-  font-size: 18px;
-} */
-
-/* p {
-  font-size: 18px;
-} */
-
+#copyright {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
