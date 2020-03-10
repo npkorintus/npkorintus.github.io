@@ -4,28 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nick Korintus</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <script src="https://kit.fontawesome.com/bd535c9c14.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav id="navbar">
-    <ul class="nav-list">
+    <ul id="nav-list">
       <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
-      <li><a class="nav-link" href="#projects">Projects</a></li>
-      <li><a class="nav-link" href="#contact">Contact</a></li>
+      <li><a class="nav-link" href="#projects-section">Projects</a></li>
+      <li><a class="nav-link" href="#contact-section">Contact</a></li>
     </ul>
   </nav>
   <main>
-    <section id="welcome-section" class="welcome-section">
-      <div id="welcome-header">
-        <h1>Hello there!</h1>
-        <p>My name is Nick and I am a Front-End Developer. I currently live just outside of Philadelphia with my beautiful wife.</p>
-      </div>
+    <section id="welcome-section">
+      <h1 id="welcome-header">Hello there!</h1>
+      <i><p id="intro">My name is Nick and I am a Front-End Developer. I currently live just outside of Philadelphia. My passions include technology, design, and learning new things.</p></i>
     </section>
-    <section id="projects" class="projects-section">
-      <div class="projects-header">
-        <h2>Here are some of my projects</h2>
-      </div>
-      <div class="projects-grid">
+    <section id="projects-section">
+      <h2 id="projects-header">Here are some of my projects</h2>
+      <div id="projects-grid">
         <div class="project">
           <a href="/pages/bernie/bernie.html" target="_blank" class="project-tile">
             <img class="project-image" src="/assets/tribute-page.png" alt="project">
@@ -58,21 +56,28 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact-section">
-      <div class="contact-header">
-        <h1>Let's connect!</h1>
-        <i><p>Here are some places you can find me:</p></i>
+    <section id="contact-section">
+      <h1 id="contact-header">Let's connect!</h1>
+      <i><p>Here are some places you can find me:</p></i>
+      <div id="contact-links">
+        <div class="profile-link">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/npkorintus" target="_blank" class="btn contact-details">
+            <p class="contact-label">GitHub</p>
+          </a>
       </div>
-      <div class="contact-links">
-        <a id="profile-link" href="https://github.com/npkorintus" target="_blank" class="btn contact-details">
-          <p class="contact-label">GitHub</p>
-        </a>
-        <a id="profile-link" href="https://www.linkedin.com/in/nicholas-korintus/" target="_blank" class="btn contact-details">
-          <p class="contact-label">LinkedIn</p>
-        </a>
-        <a id="profile-link" href="mailto:nicholas.korintus@gmail.com" class="btn contact-details">
-          <p class="contact-label">Email me</p>
-        </a>
+        <div class="profile-link">
+          <i class="fab fa-linkedin"></i>
+          <a id="profile-link" href="https://www.linkedin.com/in/nicholas-korintus/" target="_blank" class="btn contact-details">
+            <p class="contact-label">LinkedIn</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <i class="fas fa-envelope-square"></i>
+          <a id="profile-link" href="mailto:nicholas.korintus@gmail.com" class="btn contact-details">
+            <p class="contact-label">Email me</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>
