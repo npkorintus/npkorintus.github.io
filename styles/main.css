@@ -4,13 +4,13 @@
 }
 
 html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab';
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 nav {
-  background-color: rgb(95, 158, 160);
+  background-color: #ffffff;
   justify-content: flex-end;
   display: flex;
   position: fixed;
@@ -22,15 +22,15 @@ nav {
 #nav-list {
   list-style-type: none;
   display: flex;
-  padding-right: 8px;
+  padding-right: 16px;
 }
 
 #nav-list a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #1e1e1e;
   padding: 12px;
   display: block;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 #links {
@@ -42,7 +42,7 @@ main {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .flex-layout {
@@ -57,8 +57,8 @@ p {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: rgb(30, 30, 30);
-  color: rgb(230, 230, 230);
+  color: #1e1e1e;
+  background: #ffffff;
 }
 
 #welcome {
@@ -67,8 +67,7 @@ p {
 }
 
 #welcome-header {
-  font-size: 72px;
-  margin-bottom: 16px;
+  font-size: 6rem;
 }
 
 #intro {
@@ -82,7 +81,7 @@ p {
 
 #projects-header {
   text-align: center;
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 #projects-grid {
@@ -104,9 +103,9 @@ p {
   height: calc(100% - 40px);
   width: 100%;
   object-fit: cover;
-  box-shadow: 2px 2px darkslategray;
+  box-shadow: 2px 2px #2f4f4f;
   border-radius: 4px;
-  border: 1px solid rgb(30, 30, 30);
+  border: 1px solid #1e1e1e;
 }
 
 img {
@@ -116,8 +115,8 @@ img {
 
 .project-title {
   margin-bottom: 16px;
-  font-size: 32px;
-  color: black;
+  font-size: 2rem;
+  color: #000000;
 }
 
 .project-tile, .contact-label, a {
@@ -146,14 +145,13 @@ img {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: rgb(30, 30, 30);
-  color: rgb(230, 230, 230);
+  color: #1e1e1e;
+  background: #ffffff;
 }
 
 #contact-header {
   text-align: center;
-  font-size: 72px;
-  margin-bottom: 16px;
+  font-size: 5rem;
 }
 
 #contact-links {
@@ -169,7 +167,7 @@ img {
 }
 
 .contact-details {
-  color: rgb(230, 230, 230);
+  color: #1e1e1e;
 }
 
 .profile-link {
@@ -180,7 +178,7 @@ img {
 }
 
 .profile-link i {
-  font-size: 24px;
+  font-size: 1.4rem;
 }
 
 .btn {
@@ -190,15 +188,15 @@ img {
 }
 
 footer {
-  border-top: 2px solid rgb(95, 158, 160);
-  background: rgb(30, 30, 30);
-  color: rgb(230, 230, 230);
+  background: #ffffff;
+  color: #1e1e1e;
   text-align: left;
 }
 
 #copyright {
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 16px;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
@@ -231,15 +229,15 @@ footer {
   }
 
   .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(230, 230, 230);
-    margin: 6px 0;
+    width: 20px;
+    height: 2px;
+    background-color: #1e1e1e;
+    margin: 4px 0;
     transition: 0.5s;
   }
 
   .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-10px, 1px);
   }
 
   .change .bar2 {
@@ -247,7 +245,7 @@ footer {
   }
 
   .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, 1px);
   }
 
   #welcome {
@@ -256,7 +254,8 @@ footer {
 
   #intro {
     max-width: 350px;
-    font-size: 16px;
+    font-size: 1.2rem;
+    margin-top: 12px;
   }
 
   #contact-links {
@@ -266,11 +265,12 @@ footer {
   }
 
   #welcome-header, #contact-header {
-    font-size: 60px;
+    font-size: 4rem;
+    line-height: 1;
   }
 
   #projects-header {
-    font-size: 44px;
+    font-size: 3.2rem;
   }
 
   .project {
@@ -289,8 +289,9 @@ footer {
   }
 
   .project-title {
-    margin: 24px 0 8px 0;
+    margin: 24px 0 4px 0;
     font-size: 24px;
     text-align: center;
+    line-height: 1;
   }
 }

@@ -6,13 +6,17 @@
   <title>Nick Korintus</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
   <script src="https://kit.fontawesome.com/bd535c9c14.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav id="navbar">
     <ul id="nav-list">
       <div id="links">
-        <li id="nav-link"><a href="#welcome-section">Welcome</a></li>
+        <li id="nav-link"><a href="#welcome-section">Home</a></li>
         <li id="nav-link"><a href="#projects-section">Projects</a></li>
         <li id="nav-link"><a href="#contact-section">Contact</a></li>
       </div>
@@ -132,7 +136,7 @@
     </section>
   </main>
   <footer>
-    <p id="copyright">Nick Korintus &#x24B8; 2020</p>
+    <p id="copyright">Nick Korintus © 2020</p>
   </footer>
   <script>
     function toggleMenu(x) {
@@ -140,11 +144,11 @@
 
       var showMenu = document.getElementById("links");
 
-      if (showMenu.style.right === "20px") {
+      if (showMenu.style.right === "0px") {
         showMenu.style.right = "-400px";
       }
       else {
-        showMenu.style.right = "20px";
+        showMenu.style.right = "0px";
       }
     }
   </script>
